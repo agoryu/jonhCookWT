@@ -1,0 +1,18 @@
+
+<!-- article -->
+<div class="row">
+
+    <%= for article <- @articles do %>
+      <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+              <img src="<%= static_path(@conn, article.enclosur) %>" alt="...">
+              <div class="caption">
+                  <h3><%= article.title %></h3>
+                  <p><%= article.description %></p>
+                  <p><a class="btn btn-default" href="#" role="button">Suite &raquo;</a></p>
+              </div>
+          </div>
+      </div>
+    <% end %>
+
+</div>

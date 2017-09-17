@@ -1,0 +1,7 @@
+/* This file is for your main application css. */
+.container {
+  display: inline-block !important;
+  margin-left: 35vh !important;
+  width: 100vh !important;
+  max-width: 100% !important;
+}
