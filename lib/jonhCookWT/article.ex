@@ -32,4 +32,7 @@ defmodule JonhCookWT.Article do
     Repo.all(Article)
   end
 
+  def show_article(id) do
+    Article |> Repo.get!(id)
+  end
 end

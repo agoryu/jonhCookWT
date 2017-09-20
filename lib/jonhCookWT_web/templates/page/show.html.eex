@@ -1,0 +1,5 @@
+<h3> <%= @article.title %> </h3>
+
+<p> <%= @article.content %> </p>
+
+<%= link "Back", to: page_path(@conn, :index) %>
