@@ -1,0 +1,18 @@
+<!-- article -->
+<div class="list-group">
+    <%= for article <- @articles do %>
+
+      <li class="list-group-item vignetteList">
+        <%= link to: article_path(@conn, :show, article) do %>
+            <div class="thumbnail vignette">
+                <img src="<%= static_path(@conn, article.picturePath) %>" alt="...">
+                <div class="caption">
+                    <h3 class="vignetteTitle"><%= article.title %></h3>
+                    <p><%= article.description %></p>
+                </div>
+            </div>
+        <% end %>
+      </li>
+    <% end %>
+
+</div>

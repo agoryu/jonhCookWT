@@ -1,13 +1,4 @@
 /*
- * Style tweaks
- * --------------------------------------------------
- */
-html,
-body {
-  overflow-x: hidden; /* Prevent scroll on narrow devices */
-}
-
-/*
  * Off Canvas
  * --------------------------------------------------
  */
@@ -50,32 +41,4 @@ body {
     top: 0;
     width: 50%; /* 6 columns */
   }
-}
-
-#map {
-    height: 100%;
-    width: 100%;
-}
-
-#sidebar {
-  float: right;
-}
-
-.list-group-item {
-  width: 50vh;
-}
-
-.mapContainer {
-    height: 40vh;
-    margin: 0;
-    padding: 0;
-}
-
-#time {
-  animation: marquee 1s linear infinite;
-}
-
-@keyframes timeContainer {
-    0%   { transform: translate(0, 0); }
-    100% { transform: translate(-100%, 0); }
 }

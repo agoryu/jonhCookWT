@@ -1,22 +1,17 @@
 defmodule JonhCookWT.Article do
   use Ecto.Schema
   import Ecto.Changeset
-
-  import Ecto.Query, warn: false
-  alias JonhCookWT.Repo
-
+  import Ecto.Query
   alias JonhCookWT.Article
 
 
   schema "articles" do
-    field :author, :string
     field :content, :string
+    field :datePublication, :date
     field :description, :string
-    field :enclosur, :string
-    field :fluxUrl, :string
-    field :publicationDate, :date
+    field :picturePath, :string
     field :title, :string
-    field :url, :string
+    field :country_id, :id
 
     timestamps()
   end
@@ -24,15 +19,16 @@ defmodule JonhCookWT.Article do
   @doc false
   def changeset(%Article{} = article, attrs) do
     article
-    |> cast(attrs, [:title, :url, :description, :author, :enclosur, :publicationDate, :fluxUrl, :content])
-    |> validate_required([:title, :url, :description, :author, :enclosur, :publicationDate, :fluxUrl, :content])
+    |> cast(attrs, [:title, :content, :description, :picturePath, :datePublication])
+    |> validate_required([:title, :content, :description, :picturePath, :datePublication])
   end
 
-  def list_articles do
-    Repo.all(Article)
+  def list_articles(idCountry) do
+    query = from a in Article, where: a.country_id == ^idCountry
+    JonhCookWT.Repo.all(query)
   end
 
   def show_article(id) do
-    Article |> Repo.get!(id)
+    Article |> JonhCookWT.Repo.get!(id)
   end
 end

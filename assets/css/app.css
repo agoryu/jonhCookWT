@@ -1,7 +1,109 @@
+@font-face {
+    font-family: 'cac_champagne';
+    src: url('../fonts/cac_champagne.ttf');
+}
+
 /* This file is for your main application css. */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+  background-color: #ececee !important;
+}
+
+main {
+  margin-left: -18vh;
+  margin-top: 10vh;
+  width: 175vh;
+}
+
+#title {
+  margin-left: 80vh;
+  color: white;
+  margin-top: 10px;
+  font-family: 'cac_champagne';
+}
+
+#articleTitle {
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  font-weight: bold;
+  font-family: 'cac_champagne';
+  font-size: 40px;
+}
+
+#articleContent {
+  font-size: 20px;
+  margin-left: 20vh;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+#sidebar {
+  float: right;
+}
+
+#time {
+  animation: marquee 1s linear infinite;
+}
+
+#connection {
+  margin-left: 82vh;
+}
+
+.vignette {
+  border: none !important;
+}
+
 .container {
   display: inline-block !important;
   margin-left: 35vh !important;
-  width: 100vh !important;
+  width: 100% !important;
   max-width: 100% !important;
+}
+
+.vignetteTitle {
+  text-align: center;
+  font-size: 35px;
+  font-family: 'cac_champagne';
+}
+
+.publicationDate {
+  font-size: 10px;
+  color: #777;
+}
+
+.navbar-custom {
+  height: 1vh;
+}
+
+.navbar-custom > .container {
+  margin-left: 0 !important;
+}
+
+.list-group-item {
+  width: 50vh;
+}
+
+.mapContainer {
+  height: 80vh;
+  margin: 0;
+  padding: 0;
+}
+
+.vignetteList {
+  margin-left: 40vh;
+  width: 55%;
+}
+
+.customAlert {
+  margin-top: 50px;
+}
+
+@keyframes timeContainer {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
 }

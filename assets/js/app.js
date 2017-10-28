@@ -39,6 +39,9 @@ function ajaxGet(url, callback) {
     req.send(null);
 }
 
+// function getWeather() {
+//   document.getElementById("meteo").get
+// }
 ajaxGet("http://api.wunderground.com/api/50a65432f17cf542/conditions/q/France/Lille.json", function (reponse) {
     var meteo = JSON.parse(reponse);
     // Récupération de certains résultats

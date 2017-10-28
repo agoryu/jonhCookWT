@@ -23,9 +23,6 @@ defmodule JonhCookWTWeb do
       import Plug.Conn
       import JonhCookWTWeb.Router.Helpers
       import JonhCookWTWeb.Gettext
-
-      import Ecto
-      import Ecto.Query
     end
   end
 
