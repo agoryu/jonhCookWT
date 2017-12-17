@@ -19,9 +19,7 @@ defmodule JonhCookWTWeb.Router do
     get "/country/:id", ArticleController, :index
     get "/article/:id", ArticleController, :show
     get "/destination", DestinationController, :index
-    get "/login", LoginController, :index
-    post "/login", LoginController, :create
-    get "/action", ActionController, :index
+
   end
 
   # Other scopes may use custom stacks.

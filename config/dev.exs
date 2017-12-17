@@ -52,7 +52,7 @@ config :phoenix, :stacktrace_depth, 20
 config :jonhCookWT, JonhCookWT.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "ganondorf",
+  password: "postgres",
   database: "jonhcookwt_dev",
   hostname: "localhost",
   pool_size: 10

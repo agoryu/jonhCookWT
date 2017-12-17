@@ -12,4 +12,5 @@ defmodule JonhCookWTWeb.ArticleController do
     article = Article.show_article(id)
     render conn, "show.html", article: article
   end
+
 end

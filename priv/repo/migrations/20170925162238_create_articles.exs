@@ -4,7 +4,7 @@ defmodule JonhCookWT.Repo.Migrations.CreateArticles do
   def change do
     create table(:articles) do
       add :title, :string
-      add :content, :string
+      add :content, :text
       add :description, :string
       add :picturePath, :string
       add :datePublication, :date
