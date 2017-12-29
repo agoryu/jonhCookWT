@@ -40,7 +40,7 @@
       <ul>
         <li><a href="https://twitter.com/JonhCookWT">Twitter <img class="socialIcon" src="<%= static_path(@conn, "/images/icons/twitter.png") %>" /></a></li>
         <li><a href="https://www.facebook.com/Jonh-Cook-173435413224344/">Facebook <img class="socialIcon" src="<%= static_path(@conn, "/images/icons/facebook.png") %>" /></a></li>
-        <li><a href="https://www.youtube.com/">Youtube <img class="socialIcon" src="<%= static_path(@conn, "/images/icons/youtube.png") %>" /></a></li>
+        <li><a href="https://www.youtube.com/channel/UC-UKMgIxnM-RTavNskTtEHw">Youtube <img class="socialIcon" src="<%= static_path(@conn, "/images/icons/youtube.png") %>" /></a></li>
         <!-- <li><a href="https://www.tipeee.com/">Tipeee <img class="socialIcon" src="icons/tipeee.png" /></a></li>
         <li><a href="https://www.paypal.com/fr/webapps/mpp/charity">Paypal <img class="socialIcon" src="icons/paypal.png" /></a></li>-->
         <li><a href="https://www.flickr.com/photos/154697153@N07">Flickr <img class="socialIcon" src="<%= static_path(@conn, "/images/icons/flickr.png") %>" /></a></li>

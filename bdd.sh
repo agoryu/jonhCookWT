@@ -55,4 +55,4 @@ insert into articles values (1, 'Voyage à Paris', '<p>
 <p>
   Vous me suivez toujours ?
   Au plaisir jonhcook
-</p>', 'Le défis : Paris ....en stop ! Avec le frangin', '/images/article/articleParis.jpg', now(), 1, now(), now());
+</p>', 'Le défis : Paris ....en stop ! Avec le frangin', '/images/article/Paris.jpg', now(), 1, now(), now());
