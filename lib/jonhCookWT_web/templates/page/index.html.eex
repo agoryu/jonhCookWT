@@ -2,8 +2,8 @@
 <!-- pays -->
 <div class="row">
     <%= for country <- @countries do %>
-      <%= link to: article_path(@conn, :index, country) do %>
-        <div class="col-sm-6 col-md-4">
+      <%= link to: article_path(@conn, :index, country), class: "countryLink" do %>
+        <div class="col-sm-6 col-md-4 vignette">
             <div class="thumbnail">
                 <img src="<%= static_path(@conn, country.picturePath) %>" alt="...">
                 <div class="caption vignetteTitle">
@@ -13,6 +13,4 @@
         </div>
       <% end %>
     <% end %>
-
-
 </div>

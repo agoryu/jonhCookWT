@@ -17,17 +17,19 @@
       <p class="alert alert-info customAlert" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger customAlert" role="alert"><%= get_flash(@conn, :error) %></p>
 
-      <nav class="navbar navbar-fixed-top navbar-inverse navbar-custom">
+      <!--<nav class="navbar navbar-fixed-top navbar-inverse navbar-custom">
         <div class="container">
-            <div id="navbar" class="collapse navbar-collapse">
+            <div id="navbar">
               <ul class="nav navbar-nav">
                   <li><%= link 'Articles', to: page_path(@conn, :index) %></li>
-                  <!-- <li><%= link 'Voyage', to: destination_path(@conn, :index) %></li> -->
+                  <li><%= link 'Voyage', to: destination_path(@conn, :index) %></li>
                   <li><h1 id="title">Jonh Cook</h1></li>
               </ul>
             </div>
         </div>
-      </nav>
+      </nav> -->
+
+      <h1 id="title">Jonh Cook</h1>
 
       <main role="main">
         <%= render @view_module, @view_template, assigns %>
@@ -38,12 +40,14 @@
     <!-- liste réseau sociaux -->
     <nav class="social">
       <ul>
-        <li><a href="https://twitter.com/JonhCookWT">Twitter <img class="socialIcon" src="<%= static_path(@conn, "/images/icons/twitter.png") %>" /></a></li>
-        <li><a href="https://www.facebook.com/Jonh-Cook-173435413224344/">Facebook <img class="socialIcon" src="<%= static_path(@conn, "/images/icons/facebook.png") %>" /></a></li>
-        <li><a href="https://www.youtube.com/channel/UC-UKMgIxnM-RTavNskTtEHw">Youtube <img class="socialIcon" src="<%= static_path(@conn, "/images/icons/youtube.png") %>" /></a></li>
+        <!-- <li><a href="https://twitter.com/JonhCookWT">Twitter <img class="socialIcon" src="<%= static_path(@conn, "/images/icons/twitter.png") %>" /></a></li> -->
+        <li><a href="https://www.facebook.com/Jonh-Cook-173435413224344/"><img class="socialIcon" src="<%= static_path(@conn, "/images/icons/facebook.png") %>" /></a></li>
+        <li><a href="https://www.youtube.com/channel/UC-UKMgIxnM-RTavNskTtEHw"><img class="socialIcon" src="<%= static_path(@conn, "/images/icons/youtube.png") %>" /></a></li>
         <!-- <li><a href="https://www.tipeee.com/">Tipeee <img class="socialIcon" src="icons/tipeee.png" /></a></li>
         <li><a href="https://www.paypal.com/fr/webapps/mpp/charity">Paypal <img class="socialIcon" src="icons/paypal.png" /></a></li>-->
-        <li><a href="https://www.flickr.com/photos/154697153@N07">Flickr <img class="socialIcon" src="<%= static_path(@conn, "/images/icons/flickr.png") %>" /></a></li>
+        <!-- <li><a href="https://www.flickr.com/photos/154697153@N07">Flickr <img class="socialIcon" src="<%= static_path(@conn, "/images/icons/flickr.png") %>" /></a></li> -->
+        <!-- <li><a href="https://www.leetchi.com/fr/Cagnotte/28459680/4c36bb07"><img class="socialIcon" src="<%= static_path(@conn, "/images/icons/leetchi.png") %>" /></a></li> -->
+        <li><a href="https://www.polarsteps.com/jonathanvanegue"><img class="socialIcon" src="<%= static_path(@conn, "/images/icons/polarsteps.png") %>" /></a></li>
       </ul>
     </nav>
 

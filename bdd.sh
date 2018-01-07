@@ -56,3 +56,83 @@ insert into articles values (1, 'Voyage à Paris', '<p>
   Vous me suivez toujours ?
   Au plaisir jonhcook
 </p>', 'Le défis : Paris ....en stop ! Avec le frangin', '/images/article/Paris.jpg', now(), 1, now(), now());
+
+insert into articles values (2, 'Préparation du sac', '<p>Dans mon sac  1</p>
+<p>Pour un total de 10 kg auquel il faut déduire une tenue que je porterai voici la liste de mon gros sac qui voyagera essentiellement en soute (bus et avion)
+Pour le sac j''avais déjà un Forclaz 70L de chez décathlon</p>
+<ul>
+  <li>1 paire de tongs</li>
+  <li>1 paire de basket de marche nordique léger et confortable 1 taille au dessus pour anticiper le gonflement des pieds à cause de la chaleur et les longues marches.</li>
+  <li>4 paires de chaussettes 2 courtes et 2 longues</li>
+  <li>4 Caleçons</li>
+  <li>1 short de bain</li>
+  <li>2 pantalons qui peuvent se transformer en shorts</li>
+  <li>1 short en jean léger</li>
+  <li>1 pantalon léger et fin</li>
+  <li>1 chemise à manches longues</li>
+  <li>4 t-shirts</li>
+  <li>1 ceinture avec zip caché</li>
+  <li>1 espèce de banane à planquer sous les habits</li>
+  <li>1 sweet à capuche ultra chaud</li>
+  <li>1 sweet à capuche affreux mais que j''adore, super à l''aise dedans je le prend pour les longs voyages en bus climatisé et pour les coups de mou il me rappellera les dimanches déguisé en canapé !</li>
+  <li>1 k-way</li>
+  <li>1 sac de couchage ultra compact</li>
+  <li>1 matelas gonflable ultra compact</li>
+  <li>1 Hamac avec moustiquaire</li>
+  <li>1 sac imperméable avec un cadenas à code pour y mettre mon sac en soute (en bleu sur la photo)</li>
+  <li>1 casquette</li>
+  <li>1 autre cadenas</li>
+  <li>1 couteau suisse</li>
+  <li>1 Frontale et une petite lampe à dinamo</li>
+  <li>1 serviette microfibre</li>
+  <li>1 paire de de lunettes de soleil bonne protection UV</li>
+  <li>1 poche étanche contenant les cachets sans les boites mais avec les notices de :
+    <ul>
+      <li>Antibio</li>an
+      <li>ti-dyaretique</li>
+      <li>anti-paludique</li>
+      <li>anti-septique</li>
+      <li>1 boite de levure</li>
+      <li>doliprane</li>
+    </ul>
+  <li>1 trousse de toilette qui s''accroche contenant:</li>
+  <ul>
+    <li>Savon de Marseille (corps et lessive)</li>
+    <li>Dentifrice et brosse à dents</li>
+    <li>Crème solaire et après soleil</li>
+    <li>Répulsif à moustique  corps et fringues</li>
+    <li>Du pq et oui en Asie parfois ça manque !</li>
+    <li>Et un floaty pour go pro</li>
+  </ul></li>
+</ul>
+<img src="<%= static_path(@conn,"/images/article/sac1.jpeg") %>" alt="...">
+<p>Depuis la photo j''ai retiré les gants et le petit réchaud/ bol par contre j''y ai ajouté une gourde filtrante lifestraw.</p>
+
+<p>Pour le 2eme sac j''ai pris un 20 litres de chez quechua  qui pèsera 7 kilos et qui restera constamment avec moi. J''y met les objets de valeur et lorsque je porterai les 2 sacs celui ci se trouvera devant.
+Il contient:<p>
+<ul>
+  <li>Mon Mac book air et son chargeur</li>
+  <li>La go pro hero 6 avec chargeur double batterie et 2 cartes micro sd 32 et 64 Giga</li>
+  <li>La perche qui fait également trépied</li>
+  <li>Un ipod et son chargeur</li>
+  <li>Téléphone samsung S7 et son chargeur</li>
+  <li>2 disques durs externes</li>
+  <li>2 marqueurs</li>
+  <li>Un stylo et son calepin</li>
+  <li>Le lonely planet Vietnam pour commencer</li>
+  <li>Un petit dico anglais</li>
+  <li>Un bon roman « shantaram » un gros pavé, mais lui ne consomme pas de batterie</li>
+  <li>Encore une paire de lunettes de soleil</li>
+  <li>Sac étanche au cas ou pour le mac</li>
+  <li>Un portefeuille avec passeport, cartes de retrait, carnet de vaccinations</li>
+  <li>Une blague à tabac et le briquet. Oui je sais !</li>
+  <li>Un petit cadenas avec câble en fer</li>
+  <li>Et une petite enceinte pour avoir du son partout. Très important pour moi la musique</li>
+  <li>Mouchoirs</li>
+  <li>Mini brosse à dents et mini dentifrice pour les escales</li>
+  <li>Une clé usb</li>
+  <li>Quelques cartes de visites avec l''adresse du blog, l''adresse mail, Facebook, Tweeter flikr et le dos vierge pour pouvoir y mettre des petites annotations</li>
+</ul>
+<img src="<%= static_path(@conn, "/images/article/sac2.jpeg") %>" alt="...">
+<p>N''apparait pas sur la photo mais je prend aussi un ballon gonflable en forme de globe je me dis que cela pourrait faciliter les échanges dans certains endroits à voir
+Voila ce qui composera ma maison durant les mois à venir. Bien sur cette liste bougera. Je ne manquerai pas d y apporter les modifications en cours de route.</p>', 'Présentation de la composition de mon sac durant le voyage', '/images/article/sac.jpg', now(), 1, now(), now());

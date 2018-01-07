@@ -6,21 +6,27 @@
 /* This file is for your main application css. */
 html,
 body {
-  overflow-x: hidden; /* Prevent scroll on narrow devices */
-  background-color: #ececee !important;
+  /*overflow-x: hidden; /* Prevent scroll on narrow devices */
+  /*background-color: #ececee !important;*/
+  background-image: url("../images/background.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 main {
-  margin-left: -18vh;
+  margin-left: -27vh;
   margin-top: 10vh;
   width: 175vh;
 }
 
+img {
+  border-radius: 15px;
+}
+
 #title {
-  margin-left: 90vh;
-  color: white;
-  margin-top: 10px;
+  margin-left: 75%;
   font-family: 'cac_champagne';
+  font-size: 50px;
 }
 
 #articleTitle {
@@ -56,13 +62,12 @@ main {
 
 .vignette {
   border: none !important;
+  background-color: transparent !important;
 }
 
 .container {
   display: inline-block !important;
-  margin-left: 35vh !important;
-  width: 100% !important;
-  max-width: 100% !important;
+  margin-left: 330px !important;
 }
 
 .vignetteTitle {
@@ -97,13 +102,26 @@ main {
 .vignetteList {
   margin-left: 40vh;
   width: 55%;
+  background-color: transparent !important;
+  border: none !important;
 }
 
 .customAlert {
   margin-top: 50px;
 }
 
+.thumbnail {
+  border: none !important;
+  background-color: transparent !important;
+}
+
 @keyframes timeContainer {
     0%   { transform: translate(0, 0); }
     100% { transform: translate(-100%, 0); }
+}
+
+@media screen and (max-width: 770px) {
+  .countryLink {
+    max-width: 50% !important;
+  }
 }
